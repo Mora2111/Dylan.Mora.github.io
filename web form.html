@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="web form.css">
+</head>
+<body>
+    <header>
+        <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about us.html">About</a></li>
+        <li><a href="web form.html">Book an appointment</a></li>
+    </ul>
+    </header>
+    <div class="container">
+        <form action="submission.html" method="GET">
+            <h2>Book an Appoinment</h2>
+                <div class="content">
+                    <div class="input-box">
+                        <label for="name">Full Name</label>
+                        <input type="text" placeholder="Enter full name" name="name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email</label><br>
+                        <input type="email" placeholder="Enter your valid email address" id="email" required >
+                    </div>
+                    <div class="input-box">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" placeholder="Enter phone number" id="phone" required>
+                    </div>
+                    <div class="services">
+                        <label for="services">Service required</label><br>
+                            <select name="services" id="services">
+                                <option value="regular haircut">Regular Haircut</option>
+                                <option value="special haircut">Special Haircut</option>
+                                <option value="haircut and beard">Haircut and beard</option>
+                                <option value="other">Other</option>
+                            </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="date">Appoinment Date</label>
+                        <input type="date" placeholder="Choose a day" id="Appoinment date" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="time">Time</label>
+                        <input type="time" placeholder="Time" id="time" required>
+                    </div>
+                    <div class="comments">
+                        <label for="extra">Any Comments?</label><br><br>
+                        <textarea id="extra" name="extra" rows="4" cols="40"></textarea>
+                    </div>
+                    <div class="button-container">
+                        <input type="submit" value="Submit">
+                        <button>Cancel</button>
+                    </div>
+                </div>
+        </form>
+    </div>  
+</body>
+</html>

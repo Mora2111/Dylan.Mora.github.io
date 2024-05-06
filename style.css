@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #000000;
+    margin: 0%;
+}
+header {
+    background-color: #000000;
+    border-bottom: 1px solid #000000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    font-family: poppins;
+  }
+  a{
+    text-decoration: none;
+    color: #FFC830;
+  }
+ .nav-links{
+list-style: none;
+ }
+ .nav-links li{
+    display: inline-block;
+    padding: 0 30px;
+ }
+a:hover{
+    color: #ffffff; /* Use pseudo classes for hypertext links */
+}  
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+.first{
+    position: relative;
+    background-image: url(andre-reis-1_DAlXy0wng-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.title {
+    font-family: poppins;
+    color: #ffffff;
+    text-align: justify;
+    font-size: 3.5em;
+    font-style: italic;
+    position: absolute;
+    top: 10%;
+}
+.second {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 125vh;
+}
+
+.slogan {
+    color: #FFC830;
+    text-align: center;
+    font-style: italic;
+    font-weight: 200;
+    position: absolute;
+    top: 30px;
+}
+h2{
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+.responsive{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+.image-grid{
+    border: 1px solid;
+}
+.image-grid:hover {
+    border-color: #FFC830; 
+}
+.third {
+    position: relative;
+    background-image: url(barber\ background.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+h3{
+    color: #ffffff;
+    font-size: 2.5em;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+.reviews{
+    overflow: hidden;
+    color: #FFC830;
+    font-size: 1.7em;
+}
+.carousel {
+    display: flex;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.opinion {
+    flex: 0 0 auto; 
+    width: 80%;
+    margin-right: 20px; 
+    scroll-snap-align: start;
+    animation: slide-in 100s infinite alternate;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+    0% {
+        transform: translateX(100%);
+    }
+}
+footer{
+    background-color: #CFA529;
+    color: #ffffff;
+    position: static;
+    text-align: center;
+    font-size: 20px;
+    width: auto;
+    height: 155px;
+}
+@media screen and (max-width: 768px) /* Implement responsive design */{
+
+    header {
+        justify-content: center;
+        padding: 20px; 
+    }
+    .nav-links li {
+        padding: 10px; 
+    }
+    .title {
+        font-size: 2em; 
+    }
+    .slogan {
+        font-size: 1.2em;
+    }
+    .carousel {
+        scroll-snap-type: none; 
+        overflow-x: hidden; 
+    }
+}
